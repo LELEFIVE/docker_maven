@@ -18,6 +18,6 @@ spec:
       wang: deploymenttest
    spec:  
     containers:
-    - image: registry-vpc.cn-beijing.aliyuncs.com/gyjx-produce/docker_maven:0.0.2-SNAPSHOT
+    - image: registry-vpc.cn-beijing.aliyuncs.com/gyjx-produce/docker_maven:latest
       imagePullPolicy: IfNotPresent
       name: java-test-project
