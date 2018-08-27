@@ -1,5 +1,5 @@
-# 基于哪个镜像
-FROM java:8
+﻿# 基于哪个镜像
+FROM registry.cn-beijing.aliyuncs.com/zhenshi/java:8_server-jre
 
 RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai' >/etc/timezone
 
