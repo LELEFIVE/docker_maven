@@ -1,0 +1,23 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: deploymenttest
+  namespace: default
+  labels:
+    wang: deploymenttest
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      wang: deploymenttest
+  template:
+   metadata:
+    name: deploymenttest
+    namespace: default
+    labels:
+      wang: deploymenttest
+   spec:  
+    containers:
+    - image: registry-vpc.cn-beijing.aliyuncs.com/gyjx-produce/docker_maven:0.0.2-SNAPSHOT
+      imagePullPolicy: IfNotPresent
+      name: java-test-project

@@ -27,8 +27,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 
-		<docker.repostory>172.20.36.232:5000</docker.repostory>
-		<docker.registry.name>wangxiaotesting</docker.registry.name>
+		<docker.repostory>registry.cn-beijing.aliyuncs.com</docker.repostory>
+		<docker.registry.name>gyjx-produce</docker.registry.name>
 	</properties>
 
 	<dependencies>
